@@ -10,14 +10,14 @@ Message.destroy_all
 User.destroy_all
 Conversation.destroy_all
 
-user = User.create(email: "a@a.co", password_digest: "aaaa")
+user = User.create(email: "a@a.co", password_digest: "$2a$10$Lj4pHBFQpfqJJIAF/qWhVu15pkaA93INx/jEYlH7Sl2OLr7jCgiEm")
 message = Message.create(message: "AAAA")
 converstaion = Conversation.create(user_id: user.id, message_id: message.id)
 
-user = User.create(email: "b@b.co", password_digest: "bbbb")
+user = User.create(email: "b@b.co", password_digest: "$2a$10$T.MnG1vf47PO6npp/lLvIOWvoOnMa9y9OlUei3dbIQV7VNgiSPRB.")
 message = Message.create(message: "BBBB")
 converstaion = Conversation.create(user_id: user.id, message_id: message.id)
 
-user = User.create(email: "c@c.co", password_digest: "cccc")
+user = User.create(email: "c@c.co", password_digest: "$2a$10$QtUPVpXn6AoUD/3GusCnP.buvorZqW9b.S5h8UD49kCUQADDWChxG")
 message = Message.create(message: "CCCC")
 converstaion = Conversation.create(user_id: user.id, message_id: message.id)
